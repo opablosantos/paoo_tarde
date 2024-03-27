@@ -22,5 +22,17 @@ app.post('/lembretes', (req, res) => {
     res.json(lembrete)
 })
 
+// Endpoint para buscar um lembrete por ID
+app.get('/lembretes/:id', (req, res) => {
+    const lembreteId = req.params.id;
+    const lembrete = lembretes[lembreteId];
+
+    if (lembrete) {
+        res.json(lembrete);
+    } else {
+        res.status(404).send('Lembrete não encontrado');
+    }
+});
+
 const port = 4000
 app.listen(port, () => console.log(`Lembretes. Porta ${port}.`))
