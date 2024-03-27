@@ -1,0 +1,43 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "paoo_mss",
+    "dateExported": "2024-03-27T20:58:10.515Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "7285c243-758d-4614-9a6b-3edb87b123ce",
+            "name": "lembretes",
+            "containerId": "",
+            "created": "2024-03-27T20:47:09.257Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ef3e9999-c568-4614-94d8-99c5a909d61c",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2024-03-27T20:47:16.285Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b0ef0b43-b0dd-4b3e-b3eb-929957d9b113",
+            "colId": "67ae17ce-81dd-46bb-a136-0cb75eb45e83",
+            "containerId": "7285c243-758d-4614-9a6b-3edb87b123ce",
+            "name": "Salvar lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-27T20:48:16.495Z",
+            "modified": "2024-03-27T20:50:36.437Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"Fazer café\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
